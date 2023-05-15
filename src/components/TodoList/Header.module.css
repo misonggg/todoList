@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:  var(--color-bg-header);
+  border-bottom: 1px solid var(gray);
+  padding: 0 10px;
+}
+
+.filters {
+  display: flex;
+  margin-left: 10px;
+}
+
+.filter {
+  font-size: 20px;
+  margin-left: 10px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+.filter:hover {
+  color: #ffd0aa;
+  transition: color 300ms ease-in-out;
+}
+
+.filter.selected {
+  color: #ffd0aa;
+  transition: color 300ms ease-in-out;
+}
+
+.filter.selected::after {
+  content: '';
+  display: block;
+  margin-top: -2px;
+  border: 1px solid #c4c4c4;
+}
+
+.toggle {
+  background-color: transparent;
+  color: white;
+  font-size: 23px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.toggle:hover {
+  transform: scale(1.1);
+  transition: all 150ms ease-out;
+  color: var(--color-accent);
+}
